@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="16dp"
+                android:text="Aplikasi Bahlil Keren"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:theme="@style/SearchViewWhite" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/materialToolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/gambar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bromo" />
+
+                <TextView
+                    android:id="@+id/header1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Keindahan alam dari Gunung Bromo"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deskripsi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus fermentum, mollis purus et, commodo ante. Nunc sed lorem orci. In luctus, arcu non pharetra volutpat, tortor est elementum arcu, at porta felis est ac risus. Nulla consectetur quam nec tincidunt euismod. Integer pretium ante id ligula scelerisque malesuada. Aliquam tincidunt consequat congue. Curabitur consectetur facilisis ornare. Cras sed massa ultricies, ultrices elit a, laoreet odio. Aenean tortor quam, rhoncus malesuada mollis a, ullamcorper at leo. Vivamus tempus turpis erat, nec fringilla ex tempor sed."
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/suka1"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Suka" />
+
+                    <Button
+                        android:id="@+id/share1"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Share" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/gambar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bahlil" />
+
+                <TextView
+                    android:id="@+id/header2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Bahlil lagi bahlil lagi"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deskripsi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus fermentum, mollis purus et, commodo ante. Nunc sed lorem orci. In luctus, arcu non pharetra volutpat, tortor est elementum arcu, at porta felis est ac risus. Nulla consectetur quam nec tincidunt euismod. Integer pretium ante id ligula scelerisque malesuada. Aliquam tincidunt consequat congue. Curabitur consectetur facilisis ornare. Cras sed massa ultricies, ultrices elit a, laoreet odio. Aenean tortor quam, rhoncus malesuada mollis a, ullamcorper at leo. Vivamus tempus turpis erat, nec fringilla ex tempor sed."
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/suka2"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Suka" />
+
+                    <Button
+                        android:id="@+id/share2"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Share" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/gambar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/jokowi" />
+
+                <TextView
+                    android:id="@+id/header3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="HIDUP JOKOWI"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deskripsi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus fermentum, mollis purus et, commodo ante. Nunc sed lorem orci. In luctus, arcu non pharetra volutpat, tortor est elementum arcu, at porta felis est ac risus. Nulla consectetur quam nec tincidunt euismod. Integer pretium ante id ligula scelerisque malesuada. Aliquam tincidunt consequat congue. Curabitur consectetur facilisis ornare. Cras sed massa ultricies, ultrices elit a, laoreet odio. Aenean tortor quam, rhoncus malesuada mollis a, ullamcorper at leo. Vivamus tempus turpis erat, nec fringilla ex tempor sed."
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/suka3"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Suka" />
+
+                    <Button
+                        android:id="@+id/share3"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Share" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/gambar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/gibran" />
+
+                <TextView
+                    android:id="@+id/header4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Anak buah nepotisme"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deskripsi4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus fermentum, mollis purus et, commodo ante. Nunc sed lorem orci. In luctus, arcu non pharetra volutpat, tortor est elementum arcu, at porta felis est ac risus. Nulla consectetur quam nec tincidunt euismod. Integer pretium ante id ligula scelerisque malesuada. Aliquam tincidunt consequat congue. Curabitur consectetur facilisis ornare. Cras sed massa ultricies, ultrices elit a, laoreet odio. Aenean tortor quam, rhoncus malesuada mollis a, ullamcorper at leo. Vivamus tempus turpis erat, nec fringilla ex tempor sed."
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/suka4"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Suka" />
+
+                    <Button
+                        android:id="@+id/share4"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Share" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
