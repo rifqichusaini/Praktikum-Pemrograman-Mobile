@@ -94,9 +94,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun deleteTodo(todo: Todo) {
         todo.id?.let { id ->
-            todosRef.child(id).removeValue()
+            todosRef.child(id)
+                .removeValue()
+                .addOnSuccessListener {
+                    Toast.makeText(
+                        this,
+                        "Tugas dihapus",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                .addOnFailureListener { error ->
+                    Toast.makeText(
+                        this,
+                        "Gagal menghapus: ${error.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
         }
     }
+
 
     private fun editTodo(todo: Todo) {
         AddOrEditTodoDialog(this, todosRef, todo).show()
