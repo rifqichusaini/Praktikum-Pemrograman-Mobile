@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "669522371780",
+    "firebase_url": "https://prak8-pmob-289-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "prak8-pmob-289",
+    "storage_bucket": "prak8-pmob-289.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669522371780:android:48fa36bc96a870d96c9591",
+        "android_client_info": {
+          "package_name": "com.kiki.post8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpf6qGlBrT5CVnZv32x1JvMf_WhVkc_Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669522371780:android:5ecfe0a9cf3f2cca6c9591",
+        "android_client_info": {
+          "package_name": "com.kiki.prak8"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpf6qGlBrT5CVnZv32x1JvMf_WhVkc_Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
